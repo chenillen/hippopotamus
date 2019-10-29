@@ -2,7 +2,7 @@
 # @Date:   2019-10-29T14:28:43+08:00
 # @Email:  chenillen@gmail.com
 # @Last modified by:   chenillen
-# @Last modified time: 2019-10-29T14:39:03+08:00
+# @Last modified time: 2019-10-29T14:48:51+08:00
 # @Copyright: Copyright (c) 2019 by Allen C.(@chenillen). All Rights Reserved.
 
 lib = File.expand_path('lib', __dir__)
@@ -41,6 +41,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+  spec.add_dependency 'redis', '~> 4.1.3'
+  spec.add_dependency 'rest-client', '~> 2.1.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 10.0'
