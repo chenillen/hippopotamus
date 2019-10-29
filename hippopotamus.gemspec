@@ -2,7 +2,7 @@
 # @Date:   2019-10-29T14:28:43+08:00
 # @Email:  chenillen@gmail.com
 # @Last modified by:   chenillen
-# @Last modified time: 2019-10-29T14:33:15+08:00
+# @Last modified time: 2019-10-29T14:39:03+08:00
 # @Copyright: Copyright (c) 2019 by Allen C.(@chenillen). All Rights Reserved.
 
 lib = File.expand_path('lib', __dir__)
@@ -16,18 +16,18 @@ Gem::Specification.new do |spec|
   spec.email         = ['chenillen@gmail.com']
 
   spec.summary       = 'Wechat service universal management library'
-  spec.description   = 'TODO: 微信小程序/公眾號 access_token 統一管理'
+  spec.description   = '微信小程序/公眾號 access_token 統一管理'
   spec.homepage      = 'https://github.com/chenillen/hippopotamus'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
     spec.metadata['homepage_uri'] = spec.homepage
-    spec.metadata['source_code_uri'] = "TODO: Put your gem's public repo URL here."
-    spec.metadata['changelog_uri'] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata['source_code_uri'] = 'https://github.com/chenillen/hippopotamus'
+    spec.metadata['changelog_uri'] = 'https://github.com/chenillen/hippopotamus/blob/master/README.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'
